@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let num = parseInt(prompt("Nhập Số Nguyên"));
+    let check = true;
+
+
+    function isFibonacci(num) {
+        let a = 0, b = 1, temp = 0;
+        for (let i = 1; i <= 100; i++) {
+            temp = a + b;
+            console.log(temp);
+            if (num == temp){
+                return check
+            }
+            a = b;
+            b = temp;
+        }
+        return false
+    }
+
+    console.log(isFibonacci(num))
+</script>
